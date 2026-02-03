@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Sample</title>
-    </head>
-    <body >
-        <h1 style="text-align: center; background-color:yellow" ;>Heading 1</h1>
-        <p>Paragraph <small>can</small> be <del>added</del> <i>here</i><br> This will be in next line</p>
-        <pre>
-            First line of poem
-            Second line of poem
-            Third line of poem
-        </pre>
-        <hr>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Static Site</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px 40px;
+      border-radius: 16px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      max-width: 420px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>🚀 Modern Static Website</h1>
+    <p>This site is deployed using a modern hosting platform.</p>
+    <button onclick="sayHello()">Test JavaScript</button>
+  </div>
+
+  <script>
+    function sayHello() {
+      alert("JavaScript is working perfectly!");
+    }
+  </script>
+</body>
 </html>
